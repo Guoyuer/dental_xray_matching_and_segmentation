@@ -7,9 +7,10 @@ For matching program, you firstly need to run get_all_SIFT.py to get all SIFT fe
 
 For segmentation program, you firstly need to run train.py with your own dataset. Then run predict.py to segment and postprocess.py to remove possible noises in the background.
 
-Dataset (restricted by laboratory agreements, all data will not be publicized): 
+# Dataset Description
+restricted by laboratory agreements, all data will not be publicized.
 
-400 people's panoramic dental X-rays from West China Hospital, Sichuan University. There are 933 X-ray images in total and one people has more than one X-ray captured in different time. P.S.: Most people have dental fillings or something that are impenetrable to X-rays. 
+The dataset involves 400 people's panoramic dental X-rays from West China Hospital, Sichuan University. There are 933 X-ray images in total and one people has more than one X-ray captured in different time. P.S.: Most people have dental fillings or something that are impenetrable to X-rays. 
 
 
 # Performance:
