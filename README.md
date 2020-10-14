@@ -28,7 +28,7 @@ With one CPU core, it only needs 3s to compare features of one image with these 
 A screenshot of matching program:  
 ![匹配程序截图](./匹配程序截图.png)  
 An example of segmentation：
-原图：  
+The original image：  
 ![分割原图](./分割原图.png)  
-分割后的mask：  
+The mask after segmentation：  
 ![分割结果](./分割结果.png)  
