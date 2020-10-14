@@ -1,10 +1,32 @@
 # dental_xray_match-segmenation
-该程序分为匹配和分割两部分。
-若要运行程序，请将程序内的路径换成对应的路径。对于匹配程序，还需要先运行get_all_SIFT.py文件，生成所有图片的sift算子，并保存至硬盘。
+This repo involves two parts: matching and segmentation.
 
-匹配程序运行截图如下：  
+If you want to run the two programs on your own computer, please replace the file paths in the scripts to your corresponding paths.
+
+For matching program, you firstly need to run get_all_SIFT.py to get all SIFT features for all X-rays. Features will be automatically serialized.
+
+For segmentation program, you firstly need to run train.py with your own dataset. Then run predict.py to segment and postprocess.py to remove possible noises in the background.
+
+Dataset (restricted by laboratory agreements, all data will not be publicized): 
+
+400 people's panoramic dental X-rays from West China Hospital, Sichuan University. There are 933 X-ray images in total and one people has more than one X-ray captured in different time. P.S.: Most people have dental fillings or something that are impenetrable to X-rays. 
+
+
+# Performance:
+## Segmentation:
+On the dataset above, the dice coef reaches 0.96 after careful parameter tuning.
+
+With the image size 882 * 460, segmenting an image takes about 2s on GTX 1070.
+
+## Matching:
+On the dataset above, the top3 accuracy reaches 95%. 
+
+With one CPU core, it only needs 3s to compare features of one image with these of the other 932, thanks to FLANN algorithm.
+
+# Screenshot
+A screenshot of matching program:  
 ![匹配程序截图](./匹配程序截图.png)  
-分割结果如下：
+An example of segmentation：
 原图：  
 ![分割原图](./分割原图.png)  
 分割后的mask：  
