@@ -7,12 +7,13 @@ import torch
 import torch.backends.cudnn as cudnn
 import torch.nn as nn
 from torch import optim
-import dice_loss
+
+from segmentation import dice_loss
 import matplotlib.pyplot as plt
 from torchvision import transforms as tsf
-from eval import eval_net
-from unet import UNet
-from utils import get_ids, split_train_val, get_imgs_and_masks
+from .eval import eval_net
+from .unet import UNet
+from .utils import get_ids, split_train_val, get_imgs_and_masks
 import os
 
 print(os.path.join(os.path.abspath('.'), './data/train/'))

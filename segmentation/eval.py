@@ -1,7 +1,7 @@
 import torch
 import torch.nn.functional as F
-from utils import plot_img_pred_gt
-from dice_loss import dice_coeff
+from .utils import plot_img_pred_gt
+from .dice_loss import dice_coeff
 import numpy as np
 from sklearn.metrics import roc_curve, auc
 

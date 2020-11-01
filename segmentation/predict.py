@@ -6,11 +6,11 @@ import torch
 from PIL import Image
 from torchvision import transforms
 
-from eval import eval_net
-from postprocess import post_process
-from unet import UNet
-from utils import plot_img_pred
-from utils import resize_crop_tranpose, normalize, split_img_into_squares, merge_square, dense_crf
+from .eval import eval_net
+from .postprocess import post_process
+from .unet import UNet
+from .utils import plot_img_pred
+from .utils import resize_crop_tranpose, normalize, split_img_into_squares, merge_square, dense_crf
 
 
 def predict_img(net,

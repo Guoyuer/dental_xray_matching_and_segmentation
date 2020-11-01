@@ -1,4 +1,4 @@
-def     plot_img_pred(img, pred):
+def plot_img_pred(img, pred):
     import matplotlib.pyplot as plt
 
     plt.rcParams['savefig.dpi'] = 300  # 图片像素
