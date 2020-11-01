@@ -19,7 +19,7 @@ from utility import *
 #     return res
 
 
-filePath = r'C:\同步文件夹——mi\my_dachuang\dental_xray_with_segmentation - 副本'
+filePath = r'C:\同步文件夹——mi\my_dachuang\original_dataset-archive'
 dirList = os.listdir(filePath)
 img_paths = []
 lables = []
@@ -46,5 +46,5 @@ for i in range(len(img_paths)):
     kp = kp2list(kp)
     database[lables[i]] = (kp, des)
 
-with open('database_200feature_seg.pkl', 'wb') as f:
+with open('database_200feature.pkl', 'wb') as f:
     pickle.dump(database, f)
