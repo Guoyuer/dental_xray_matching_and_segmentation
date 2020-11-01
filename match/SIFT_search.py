@@ -85,6 +85,3 @@ for i in range(len(sim_lable)):
                 target_label = com_sim_label
     record.append(res)
     rate.append(target_label == cur_sim_label)
-
-
-
