@@ -32,6 +32,9 @@ matching demonstration---negative:
 ![负样本](./匹配原理展示-负样本.png)
 
 
+**It is obvious that for two X-rays belonging to one person, any two corresponding points (points whose respective feature descriptors are similar) are at adjacent relative position in the image, and vise versa. This fact was where the idea came from.**
+
+
 A screenshot of matching program:  
 ![匹配程序截图](./匹配程序截图.png)
 
